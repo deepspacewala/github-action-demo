@@ -12,10 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make a change (by 24ds3000030@ds.study.iitm.ac.in)
+      - name: "Commit by 24ds3000030@ds.study.iitm.ac.in"  # Explicitly include email in step name
         run: |
           echo "$(date)" >> daily-log.txt  # Appends the date to a file
-          
+
       - name: Commit and push changes
         run: |
           git config --global user.name "GitHub Action Bot"
